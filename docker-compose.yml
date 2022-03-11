@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: ./deploy/Dockerfile
-    command: ["echo 'hello world'"]
+    command: bash -c "while true; do echo hello; sleep 2; done"
     volumes:
       - .:/var/www
     ports:
