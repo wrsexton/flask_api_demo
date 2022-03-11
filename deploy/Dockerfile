@@ -14,4 +14,6 @@ ENV PATH="/var/www/.local/bin:${PATH}"
 
 COPY . .
 
+RUN pip3 install -r requirements.txt
+
 USER www-data:www-data
