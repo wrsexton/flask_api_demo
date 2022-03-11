@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: ./deploy/Dockerfile
-    command: ["python3", "-u", "./hello.py", "matt"]
+    command: ["python3", "-u", "./app.py"]
     volumes:
       - .:/var/www
     ports:
