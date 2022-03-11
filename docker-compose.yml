@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: ./deploy/Dockerfile
-    command: bash -c "while true; do echo hello; sleep 2; done"
+    command: ["python3", "-u", "./hello.py"]
     volumes:
       - .:/var/www
     ports:
