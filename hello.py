@@ -1,8 +1,8 @@
 import time
 
-def main():
+def main(args):
     while True:
-        print("hello")
+        print("hello " + args[0] if len(args) else "balls")
         time.sleep(3)
 
 if __name__ == "__main__":
